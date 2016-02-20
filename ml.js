@@ -44,10 +44,14 @@ class Network {
         var outputs = this.layer.map(function(node){
         	return node.o;
         })
+        
+        var result = [];
         this.output.forEach((node, i) => {
         	this.output[i].processInput(outputs);
+        	result.push(this.outputs[i].o);
         })
-        return [this.output[0].o, this.output[1].o]    
+        
+        return result;
     }
     train(expected){
     	var errors = this.output.map((node, i) => {
