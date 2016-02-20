@@ -2,7 +2,7 @@
 
 class Node {
 	constructor(inputs) {
-		this.w = [];
+		this.w = []; // weights
 		this.p = null; //record of inputs
 		this.o = null; // output value
 		this.ALPHA = 10;
