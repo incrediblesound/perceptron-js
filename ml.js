@@ -48,7 +48,7 @@ class Network {
         var result = [];
         this.output.forEach((node, i) => {
         	this.output[i].processInput(outputs);
-        	result.push(this.outputs[i].o);
+        	result.push(this.output[i].o);
         })
         
         return result;
