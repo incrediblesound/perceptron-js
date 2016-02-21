@@ -88,10 +88,6 @@ function delta(expected, o){
     return e * s;
 }
 
-function rnd(){
-    return ;
-}
-
 function multiply(vectorA, vectorB){
     vectorA.forEach((valA, i)=>{
         vectorA[i] = vectorA[i] * vectorB[i];
